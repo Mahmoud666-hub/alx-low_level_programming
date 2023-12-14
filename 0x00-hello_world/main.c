@@ -7,5 +7,8 @@
  */
 int main(void)
 {
-return (0);
+
+	puts("hello")
+
+		return (0);
 }
