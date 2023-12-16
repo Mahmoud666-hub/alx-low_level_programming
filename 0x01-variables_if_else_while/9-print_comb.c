@@ -9,11 +9,13 @@ int main(void)
 	/*describe*/
 	int o = 48;
 
-	while (o <= 57)
+	while (o < 57)
 	{
-	putchar(o);
-	putchar(',');
-	putchar(' ');
-	o++;
-	} return (0);
+		putchar(o);
+		putchar(',');
+		putchar(' ');
+		o++;
+	}
+	putchar(57);
+	return (0);
 }
