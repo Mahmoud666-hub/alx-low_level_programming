@@ -13,5 +13,6 @@ int main(void)
 			putchar(q);
 			q++;
 		}
+		putchar('\n');
 		return (0);
 }
