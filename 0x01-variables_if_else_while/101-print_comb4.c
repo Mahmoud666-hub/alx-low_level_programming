@@ -17,7 +17,7 @@ int main(void)
 		{
 			for (e = (q + 2); e <= 57; e++)
 			{
-				if ((q != w) && (w != e) && (e != q))
+				if ((q < w) && (w < e))
 				{
 					putchar(q);
 					putchar(w);
