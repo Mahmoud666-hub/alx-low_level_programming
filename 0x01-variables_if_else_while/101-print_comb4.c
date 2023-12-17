@@ -17,14 +17,16 @@ int main(void)
 		{
 			for (e = (q + 2); e <= 57; e++)
 			{
-				putchar(q);
-				putchar(w);
-				putchar(e);
-
-				if ((q != 55) || (w != 56) || (e != 57))
+				if ((q != w) && (w != e) && (e != q))
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(q);
+					putchar(w);
+					putchar(e);
+					if ((q != 55) || (w != 56) || (e != 57))
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
