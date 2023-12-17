@@ -7,20 +7,23 @@
 int main(void)
 {
 	/*describe*/
-	int d;
-	int e;
-	 for (d = 48; d < 57; d++)
-	 {
-		 for(e = d + 1; e <= 57; e++)
-		 {
-			 putchar(d);
-			 putchar(e);
-			 if ((e != 57) || (d != 56))
-			 {
-				 putchar(',');
-				 putchar(' ');
-			 }
-		 }
-	 } putchar('\n');
-	 return (0);
+
+	int e = 48;
+	int w = (e + 1);
+
+	while (e < 57)
+	{
+		for (w = (e + 1); w <= 57; w++)
+		{
+			putchar(e);
+			putchar(w);
+
+			if ((e != 56) || (w != 57))
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		} e++;
+	} putchar('\n');
+	return (0);
 }
