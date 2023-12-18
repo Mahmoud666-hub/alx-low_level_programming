@@ -9,28 +9,21 @@ int main(void)
 	/*dexcribe*/
 	int e;
 	int r;
-	int m;
-	int n;
-
-	for ((m = 48), (n = 48); (n <= 57); n++, m++)
+	/*for(m = 48; m <= 57; m++)*/
+	for (e = 0; e < 99; e++)
 	{
-		for (e = 48; e <= 57; e++)
+		for (r = (e + 1); r <= 99; r++)
 		{
-			for (r = 48; r <= 57; r++)
+			putchar((e / 10) + 48);
+			putchar((e % 10) + 48);
+			putchar(' ');
+			putchar((r / 10) + 48);
+			putchar((r % 10) + 48);
+
+			if ((e != 98) || (r != 99))
 			{
-				if ((e != m) || (r != n) || (m != r) || (n != e))
-				{
-					putchar(m);
-					putchar(n);
-					putchar(' ');
-					putchar(e);
-					putchar(r);
-					if ((m + n + r + e) != (57 + 57 + 57 + 56))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	} putchar('\n');
