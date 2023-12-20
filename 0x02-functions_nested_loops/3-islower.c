@@ -8,8 +8,6 @@
 int _islower(int c)
 {
 	/*des*/
-	int c;
-
 	if (c <= 122 && c >= 97)
 	{
 		return (1);
