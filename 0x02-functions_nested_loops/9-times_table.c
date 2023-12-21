@@ -16,7 +16,7 @@ void times_table(void)
 			z = x * y;
 			m = ((z / 10) + 48);
 			n = ((z % 10) + 48);
-			if (m == 48)
+			if ((m == 48) && (y != 0))
 			{
 				_putchar(' ');
 			}
