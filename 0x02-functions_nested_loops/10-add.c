@@ -3,7 +3,8 @@
  * add - adds two integers together
  * @x :- parameter intiger
  * @y :- parameter intiger
- * return :- (z) for result
+ *
+ * Return: int (Sum)
  */
 int add(int x, int y)
 {
