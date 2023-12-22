@@ -14,9 +14,9 @@ int main(void)
 	i = 0;
 	/*xzs*/
 	/*while (i < 10)*/
-	{
-		putchar(i);
-	}
+	/*{*/
+		/*putchar(i);*/
+	/*}*/
 	/*spsp*/
 	printf("Infinite loop avoided! \\o/\n");
 	/*sasa*/
