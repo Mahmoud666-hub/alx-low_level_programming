@@ -11,15 +11,7 @@ int _isupper(int c)
 	/*des*/
 	if ((c >= 65) && (c <= 90))
 	{
-		int x;
-
-		for (x = c; x <= 90; x++)
-		{
-			return (1);
-		}
+		return (1);
 	}
-	else
-	{
-		return (0);
-	}
+	return (0);
 }
