@@ -9,7 +9,7 @@ int main(void)
 {
 	long x = 612852475143;
 	int y;
-	
+
 	while (y < x / 2)
 	{
 		if (x % y == 0)
