@@ -7,7 +7,7 @@
 void print_number(int n)
 {
 	/*des*/
-	int i = n;
+	unsigned int i = n;
 
 	if (n < 0)
 	{
