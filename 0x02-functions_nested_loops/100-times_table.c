@@ -25,7 +25,7 @@ void print_times_table(int n)
 					{
 						_putchar(' ');
 					}
-					if (m == 48)
+					if (m == 48 && (l == 48 || s == 48) && z != 100)
 					{
 						_putchar(' ');
 					}
@@ -34,7 +34,7 @@ void print_times_table(int n)
 				{
 					_putchar(l);
 				}
-				if (m != 48)
+				if (z >= 10)
 				{
 					_putchar(m);
 				} _putchar(s);
