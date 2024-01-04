@@ -9,6 +9,9 @@ char *_strcat(char *dest, char *src)
 {
 	int i = 0;
 	int e = 0;
+	int k;
+	int x = 0;
+	int y = 0;
 
 	while (dest[i] != '\0')
 	{
@@ -18,9 +21,7 @@ char *_strcat(char *dest, char *src)
 	{
 		e++;
 	}
-	int k = i + e;
-	int x;
-	int y = 0;
+	k = i + e;
 
 	for (x = i; x <= k; x++)
 	{
