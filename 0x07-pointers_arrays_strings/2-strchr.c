@@ -12,7 +12,6 @@ while (s[i] != '\0')
 {
 if (s[i] == c)
 {
-s = (s + i);
 return (s + i);
 }
 i++;
