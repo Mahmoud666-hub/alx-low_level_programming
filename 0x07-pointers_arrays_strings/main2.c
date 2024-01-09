@@ -11,7 +11,7 @@ int main(void)
     char *s = "hello, sorrybut more, can";
     char *f;
 
-    f = _strchr(s, ',');
+    f = _strchr(s, 'l');
 
     if (f != NULL)
     {
