@@ -13,14 +13,13 @@ while (s[i] != '\0')
 if (s[i] == c)
 {
 s = (s + i);
-break;
+return (s + i);
 }
 i++;
 }
 if (c == '\0')
 {
-return ('\0');
+return (s + i);
 }
-
-return (s);
+return (0);
 }
