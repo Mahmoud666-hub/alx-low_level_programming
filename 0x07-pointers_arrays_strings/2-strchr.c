@@ -19,7 +19,7 @@ break;
 }
 else if (c == '\0')
 {
-p = s;
+return ('\0');
 }
 i++;
 }
