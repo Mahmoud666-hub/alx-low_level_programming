@@ -11,8 +11,11 @@ int x = 0;
 int n = 0;
 int i = 0;
 int g = i + 1;
-char *q = "NULL";
-
+char *q = "nil";
+if (needle[0] == '\0')
+{
+return (haystack);
+}
 for (n = 0; haystack[n] != '\0';)
 {
 if (haystack[n] == needle[i])
