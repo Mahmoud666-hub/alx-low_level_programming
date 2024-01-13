@@ -11,7 +11,7 @@ int x = 0;
 int n = 0;
 int i = 0;
 int g = i + 1;
-char *q = "nil";
+char *q = "NULL";
 
 for (n = 0; haystack[n] != '\0';)
 {
