@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * soo
+ * _isupper - sorry i dont.
+ * @c: parameter
+ * Return: integer
  */
 int _isupper(int c)
 {

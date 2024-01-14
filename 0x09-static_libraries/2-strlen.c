@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * dse
+ * _strlen - length sedr
+ * @s: pointer
+ * Return: integer
  */
 int _strlen(char *s)
 {

@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * sou
+ * _abs - qwwe cfd
+ * @n: parameter
+ * Return: integer
  */
 int _abs(int n)
 {

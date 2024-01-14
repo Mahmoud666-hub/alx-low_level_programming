@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * swe
+ * _isdigit - aswe axsd cde
+ * @c: parameter
+ * Return: integer
  */
 int _isdigit(int c)
 {

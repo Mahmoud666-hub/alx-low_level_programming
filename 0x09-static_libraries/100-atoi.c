@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- * soui
+ * _atoi - ewsw mws
+ * @s: pointer
+ * Return: integer
  */
 int _atoi(char *s)
 {
