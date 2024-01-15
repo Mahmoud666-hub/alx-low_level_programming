@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdlib.h>
+#include"main.h"
 /**
  * main - print multi of two argument
  * @argc: parameter
