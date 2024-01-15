@@ -9,7 +9,6 @@
 int main(int argc, char *argv[])
 {
 int x, y;
-int i;
 if (argc == 1)
 {
 printf("Error\n");
