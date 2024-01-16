@@ -19,7 +19,7 @@ p[i] = c;
 if (p == NULL)
 {
 free(p);
-exit(0);
+exit(1);
 }
 return (p);
 }
