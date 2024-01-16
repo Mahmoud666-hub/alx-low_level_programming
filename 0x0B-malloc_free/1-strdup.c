@@ -18,7 +18,7 @@ while (str[i] != '\0')
 i++;
 }
 /*printf("%d", i);*/
-p = malloc(sizeof(char) *i);
+p = malloc(sizeof(char) * i);
 if (p == NULL)
 {
 free(p);
