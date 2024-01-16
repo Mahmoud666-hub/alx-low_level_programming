@@ -27,8 +27,7 @@ exit(0);
 else
 for (i = 0; str[i] != '\0'; i++)
 {
-    *(p + i) = *(str + i);
+*(p + i) = *(str + i);
 }
-
 return (p);
 }
