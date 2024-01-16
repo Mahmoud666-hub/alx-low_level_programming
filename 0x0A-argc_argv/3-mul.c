@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include"main.h"
 /**
  * main - print multi of two argument
