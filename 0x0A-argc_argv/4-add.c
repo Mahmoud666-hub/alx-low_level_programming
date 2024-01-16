@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
 {
 int i, m;
 int x = 0;
+int a = 0;
 if (argc == 1)
 {
 printf("0\n");
@@ -18,11 +19,16 @@ else
 {
 for (i = 1; i < argc; i++)
 {
-if (*argv[i] < 48 || *argv[i] > 57)
-{printf("Error\n");
+while (argv[i][a] != '\0')
+{
+if (argv[i][a] < 48 || argv[i][a] > 57)
+{
+printf("Error\n");
 return (1);
 }
 else
+a++;
+}
 m = atoi(argv[i]);
 x = x + m;
 }
