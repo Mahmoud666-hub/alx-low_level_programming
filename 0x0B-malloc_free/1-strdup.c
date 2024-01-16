@@ -17,13 +17,18 @@ while (str[i] != '\0')
 {
 i++;
 }
-p = malloc(i *sizeof(char));
+/*printf("%d", i);*/
+p = malloc(sizeof(char) *i);
 if (p == NULL)
 {
 free(p);
 exit(0);
 }
 else
-p = str;
+for (i = 0; str[i] != '\0'; i++)
+{
+    *(p + i) = *(str + i);
+}
+
 return (p);
 }
