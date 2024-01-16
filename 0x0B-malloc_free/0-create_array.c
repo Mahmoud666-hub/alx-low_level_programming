@@ -16,10 +16,10 @@ for (i = 0; i < size; i++)
 {
 p[i] = c;
 }
-if (p == 0)
+if (p == NULL)
 {
 free(p);
-return ('\0');
+exit(0);
 }
 return (p);
 }
