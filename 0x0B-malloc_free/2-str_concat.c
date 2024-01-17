@@ -11,7 +11,7 @@ char *str_concat(char *s1, char *s2)
 int i = 0, y = 0, v = 0, w = 0;
 if (s1 == NULL && s2 == NULL)
 {
-return (0);
+return ("");
 }
 else if (s1 != NULL && s2 != NULL)
 {w = strlen(s1) + strlen(s2);
