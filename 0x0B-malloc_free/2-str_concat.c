@@ -8,10 +8,10 @@
 */
 char *str_concat(char *s1, char *s2)
 {char *p;
-char *e = "";
+char *e;
 int i = 0, y = 0, v = 0, w = 0;
 if (s1 == NULL && s2 == NULL)
-{
+{e = malloc(1);
 return (e);
 }
 else if (s1 != NULL && s2 != NULL)
