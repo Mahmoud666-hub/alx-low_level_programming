@@ -1,4 +1,5 @@
 #include"main.h"
+#include<string.h>
 /**
  * str_concat - concatenates two strings
  * @s1: parameter
@@ -7,41 +8,36 @@
 */
 char *str_concat(char *s1, char *s2)
 {char *p;
-int i = 0, y = 0, e = 0, w = 0;
+int i = 0, y = 0, v = 0, w = 0;
 if (s1 == NULL && s2 == NULL)
 {
-return ('\0');
+return (NULL);
 }
-while (s1[i] != '\0')
-{
-if (s1 == NULL)
-{i = 0;
-break;
+else if (s1 != NULL && s2 != NULL)
+{w = strlen(s1) + strlen(s2);
 }
-else
-i++;
+else if (s1 == NULL)
+{w = strlen(s2);
 }
-while (s2[e] != '\0')
-{
-if (s2 == NULL)
-{e = 0;
-break;
+else if (s2 == NULL)
+{w = strlen(s1);
 }
-else
-e++;
-}
-w = i + e;
 p = malloc((w + 1) * sizeof(char));
 if (p == NULL)
 {free(p);
 exit(0);
 }
+if (s1 != NULL)
+{
 for (i = 0; s1[i] != '\0'; i++)
 {*(p + i) = *(s1 + i);
 }
-for (y = 0; s2[y] != '\0'; y++)
-{*(p + i) = *(s2 + y);
-i++;
 }
+if (s2 != NULL)
+{
+for (v = i; s2[y] != '\0'; v++)
+{*(p + v) = *(s2 + y);
+y++;
+}}
 return (p);
 }
