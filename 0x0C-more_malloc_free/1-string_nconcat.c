@@ -8,7 +8,7 @@
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {unsigned int x, y;
-char * p;
+char *p;
 if (s1 == NULL)
 {
 s1 = "";
@@ -29,8 +29,8 @@ p[x] = s1[x];
 for (y = 0; y < n && p[y] != '\0';)
 {
 p[x] = s2[y];
-x++;
 y++;
+x++;
 }
 p[x] = '\0';
 return (p);
