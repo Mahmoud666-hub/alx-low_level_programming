@@ -34,14 +34,17 @@ if (c == NULL)
 {
 exit(0);
 }
-for (x = 0; s1[x] != '\0'; x++)
+if (s1 != NULL)
 {
-c[x] = s1[x];
-}
+for (x = 0; s1[x] != '\0'; x++)
+{c[x] = s1[x];
+}}
+if (s2 != NULL)
+{
 for (y = 0; y < n && s2[y] != '\0'; y++)
 {c[x] = s2[y];
 x++;
-}
+}}
 c[x] = '\0';
 return (c);
 }
