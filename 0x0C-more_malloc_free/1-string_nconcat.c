@@ -23,13 +23,13 @@ else if (s1 == NULL)
 {x = 0;
 }
 if (n >= y)
-{c = malloc((x + y) *sizeof(char) + 1);
+{c = malloc((x + y) *sizeof(char));
 if (c == NULL)
 {exit(0);
 }
 }
 else
-c = malloc((x + (y - n)) * sizeof(char) + 1);
+c = malloc((x + (y - n)) * sizeof(char));
 if (c == NULL)
 {
 exit(0);
