@@ -26,7 +26,7 @@ for (x = 0; x < strlen(s1); x++)
 {
 p[x] = s1[x];
 }
-for (y = 0; y < n && p[y] != '\0';)
+for (y = 0; y < n;)
 {
 p[x] = s2[y];
 y++;
