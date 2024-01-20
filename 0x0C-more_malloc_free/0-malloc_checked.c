@@ -7,10 +7,6 @@
 void *malloc_checked(unsigned int b)
 {
 void *y;
-if (b < 1)
-{
-exit(98);
-}
 y = malloc(b);
 if (y == NULL)
 {
