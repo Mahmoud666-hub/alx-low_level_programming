@@ -6,7 +6,7 @@
 */
 int sum_them_all(const unsigned int n, ...)
 {
-int x, i;
+unsigned x, i;
 int sum = 0;
 va_list arg;
 if (n == 0)
