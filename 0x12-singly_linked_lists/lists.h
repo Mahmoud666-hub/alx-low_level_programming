@@ -4,14 +4,13 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * struct list_m - singly linked list
+ * struct list_t - singly linked list
  * @str: string
  * @len: length
  * @next: pointer
  * Description: singly linked list node
 */
-
-typedef struct list_m
+typedef struct list_t
 {
 char *str;
 int len;
