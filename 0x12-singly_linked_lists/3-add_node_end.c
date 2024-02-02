@@ -7,10 +7,11 @@
 */
 list_t *add_node_end(list_t **head, const char *str)
 {
-if (!head)
-return (NULL);
+list_t *p;
 list_t *q = *head;
-list_t *p = malloc(sizeof(list_t));
+if (!head || !q)
+return (NULL);
+p = malloc(sizeof(list_t));
 if (p == NULL)
 {
 free(p);
