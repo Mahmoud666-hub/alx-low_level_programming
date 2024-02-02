@@ -17,11 +17,10 @@ return (NULL);
 p->str = strdup(str);
 p->len = strlen(str);
 p->next = NULL;
-while (*head)
+while (q)
 {
-(*head) = (*head)->next;
+q = q->next;
 }
-(*head)->next = p;
-(*head) = (q);
+q->next = p;
 return (*head);
 }
