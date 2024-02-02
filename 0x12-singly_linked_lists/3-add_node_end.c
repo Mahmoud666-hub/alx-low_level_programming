@@ -17,7 +17,7 @@ return (NULL);
 p->str = strdup(str);
 p->len = strlen(str);
 p->next = NULL;
-while (q)
+while (q->next)
 {
 q = q->next;
 }
