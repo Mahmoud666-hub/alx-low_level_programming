@@ -7,21 +7,31 @@
 */
 list_t *add_node_end(list_t **head, const char *str)
 {
-list_t *p, *w = NULL;
-p = malloc(sizeof(list_t));
-if (p == NULL || *head == NULL)
+list_t *p = *head;
+list_t *w = malloc(sizeof(list_t));
+if (!head || !w)
 {
-free(p);
+free(w);
 return (NULL);
 }
-w = *head;
-p->str = strdup(str);
-p->len = strlen(str);
-p->next = NULL;
-while (w->next)
+if (str == NULL)
 {
-w = w->next;
+free(w);
+return (NULL);
 }
-w->next = p;
-return (p);
+else
+w->str = strdup(str);
+w->len = strlen(str);
+w->next = NULL;
+if (p)
+{
+while (p->next)
+{
+p = p->next;
+}
+p->next = w;
+}
+else
+*head = w;
+return (w);
 }
