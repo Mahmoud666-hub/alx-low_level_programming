@@ -3,6 +3,8 @@
 #include<string.h>
 #include<stdlib.h>
 #include<stdio.h>
+void before_main(void) __attribute__((constructor));
+
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
