@@ -13,6 +13,7 @@ if (head->next == NULL)
 free(head->str);
 free(head);
 free(temp);
+return;
 }
 temp = head;
 while (head != NULL)
