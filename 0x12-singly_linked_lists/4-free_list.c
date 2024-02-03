@@ -10,6 +10,7 @@ if (!head->next)
 {
 free(head);
 }
+else
 temp = head;
 if (temp)
 {
