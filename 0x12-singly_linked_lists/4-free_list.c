@@ -5,7 +5,11 @@
 */
 void free_list(list_t *head)
 {
-list_t *temp;
+list_t *temp = NULL;
+if (!head->next)
+{
+free(head);
+}
 temp = head;
 if (temp)
 {
