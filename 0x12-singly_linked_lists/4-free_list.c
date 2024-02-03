@@ -5,16 +5,17 @@
 */
 void free_list(list_t *head)
 {
-list_t *temp = NULL;
-if (!head->next)
+list_t *temp = head;
+if (head->next == NULL || !head)
 {
 free(head);
+free(temp);
 }
 else
-temp = head;
-if (temp)
+while (head != NULL)
 {
-temp = temp->next;
+temp = head->next;
+free(head->str);
 free(head);
 head = temp;
 }
