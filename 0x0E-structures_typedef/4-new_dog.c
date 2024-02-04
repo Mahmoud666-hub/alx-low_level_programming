@@ -16,7 +16,7 @@ if (p == NULL)
 free(p);
 return (NULL);
 }
-if (name)
+if (!name)
 {
 p->name = name;
 strcpy(a, name);
@@ -24,7 +24,7 @@ strcpy(a, name);
 else
 free(p->name);
 p->age = age;
-if (owner)
+if (!owner)
 {
 p->owner = owner;
 strcpy(b, owner);
