@@ -30,6 +30,7 @@ return (NULL);
 u->owner = malloc(strlen(owner) + 1);
 if (u->owner == NULL)
 {
+free(u->name);
 free(u->owner);
 free(u);
 return (NULL);
