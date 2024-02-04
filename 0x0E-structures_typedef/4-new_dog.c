@@ -16,17 +16,25 @@ if (p == NULL)
 free(p);
 return (NULL);
 }
-if (!name)
+if (name)
 {
 p->name = name;
+a = malloc(strlen(name) + 1);
+if (!a)
+{free(a);
+}
 strcpy(a, name);
 }
 else
 free(p->name);
 p->age = age;
-if (!owner)
+if (owner)
 {
 p->owner = owner;
+b = malloc(strlen(owner) + 1);
+if (!b)
+{free(b);
+}
 strcpy(b, owner);
 }
 else
