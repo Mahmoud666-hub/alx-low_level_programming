@@ -8,15 +8,27 @@
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *p;
-p = malloc(sizeof(dog_t));
+dog_t *p = malloc(sizeof(dog_t));
 if (p == NULL)
 {
+free(p->name);
+free(p->owner);
 free(p);
 return (NULL);
 }
-p->name = name;
+if (p->name && name)
+{
+strcpy(p->name, name);
+}
+else
+free(p->name);
 p->age = age;
-p->owner = owner;
+if (p->owner && owner)
+{
+strcpy(p->owner, owner);
+}
+else
+free(p->owner);
+
 return (p);
 }
