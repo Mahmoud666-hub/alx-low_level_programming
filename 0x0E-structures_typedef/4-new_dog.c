@@ -16,30 +16,27 @@ return (NULL);
 u = malloc(sizeof(dog_t));
 if (u == NULL)
 {
-free(u);
 return (NULL);
 }
 
 u->name = malloc(sizeof(strlen(name) + 1));
 if (u->name == NULL)
 {
-free(u->name);
 free(u);
 return (NULL);
 }
-u->name = strcpy(u->name, name);
 
 u->owner = malloc(sizeof(strlen(owner) + 1));
 if (u->owner == NULL)
 {
-free(u->owner);
 free(u->name);
 free(u);
 return (NULL);
 }
+
+u->name = strcpy(u->name, name);
+u->age = age;
 u->owner = strcpy(u->owner, owner);
 
-
-u->age = age;
 return (u);
 }
