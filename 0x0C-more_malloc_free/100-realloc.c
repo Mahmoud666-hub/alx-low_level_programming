@@ -7,7 +7,7 @@
  * Return: pointer
 */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
-{void *p;
+{
 ptr = malloc(old_size);
 if (ptr == NULL && new_size == 0)
 {
@@ -16,8 +16,7 @@ return (NULL);
 }
 if (ptr == NULL && new_size != 0)
 {
-ptr = malloc(new_size);
-return (ptr);
+return (malloc(new_size));
 }
 if (new_size == old_size)
 {
@@ -33,11 +32,11 @@ if (new_size < old_size)
 free(ptr);
 return (NULL);
 }
-p = malloc(new_size);
-if (p == NULL)
+ptr = malloc(new_size);
+if (ptr == NULL)
 {
-free(p);
+free(ptr);
 return (NULL);
 }
-return (p);
+return (ptr);
 }
