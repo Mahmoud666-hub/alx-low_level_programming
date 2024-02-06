@@ -21,9 +21,9 @@ return;
 p = (*head);
 while (p != NULL)
 {
-(*head) = p;
 p = p->next;
 free(*head);
+free(head);
 (*head) = p;
 }
 (*head) = NULL;
