@@ -6,7 +6,7 @@
 */
 int pop_listint(listint_t **head)
 {
-listint_t *p = *head;
+listint_t *p = (*head);
 int x = 0;
 if (!head)
 {
@@ -22,5 +22,6 @@ return (x);
 else
 x = p->n;
 free(*head);
+free(head);
 return (x);
 }
