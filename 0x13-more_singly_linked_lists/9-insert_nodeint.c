@@ -25,8 +25,6 @@ u->next = NULL;
 
 while (p->next != NULL && x < (idx - 1))
 {
-if (x == (idx - 1))
-{
 p = p->next;
 x++;
 }
