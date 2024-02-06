@@ -23,14 +23,10 @@ return (NULL);
 u->n = n;
 u->next = NULL;
 
-while (p->next != NULL && x <= (idx - 1))
+while (p->next != NULL && x < (idx - 1))
 {
 if (x == (idx - 1))
 {
-u->next = p->next;
-p->next = u;
-return (u);
-}
 p = p->next;
 x++;
 }
