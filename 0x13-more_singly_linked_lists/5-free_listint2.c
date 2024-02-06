@@ -6,16 +6,10 @@
 void free_listint2(listint_t **head)
 {
 listint_t *p;
-if (!head)
+if (!head || !*head)
 {
 return;
 }
-if (*head == NULL)
-{
-free(head);
-return;
-}
-
 if ((*head)->next == NULL)
 {
 free(*head);
