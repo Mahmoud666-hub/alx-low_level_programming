@@ -26,7 +26,8 @@ while (p != NULL)
 (*head) = p;
 p = p->next;
 free(*head);
-/*(*head) = p;*/
+(*head) = p;
 }
-(*head) = NULL;
+*head = NULL;
+return;
 }
