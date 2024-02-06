@@ -9,7 +9,7 @@ listint_t *p;
 if (*head == NULL || head == NULL)
 {
 (*head) = NULL;
-p = NULL;
+head = NULL;
 return;
 }
 
@@ -17,7 +17,7 @@ if ((*head)->next == NULL)
 {
 free(*head);
 (*head) = NULL;
-p = NULL;
+head = NULL;
 return;
 }
 p = *head;
@@ -27,6 +27,6 @@ p = p->next;
 free(*head);
 (*head) = p;
 }
-(*head) = NULL;
 head = NULL;
+(*head) = NULL;
 }
