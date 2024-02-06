@@ -23,5 +23,10 @@ return (p);
 p = p->next;
 x++;
 }
+if (x == index)
+{
+return (p);
+}
+else
 return (NULL);
 }
