@@ -27,6 +27,6 @@ p = p->next;
 free(*head);
 (*head) = p;
 }
-head = NULL;
 (*head) = NULL;
+head = NULL;
 }
