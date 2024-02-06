@@ -24,6 +24,4 @@ free(*head);
 (*head) = p;
 }
 (*head) = NULL;
-head = NULL;
-return;
 }
