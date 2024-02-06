@@ -28,5 +28,6 @@ u->next = p->next;
 p->next = u;
 return (u);
 }
+free(u);
 return (NULL);
 }
