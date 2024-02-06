@@ -16,7 +16,7 @@ free(*head);
 return;
 }
 p = *head;
-while (p != NULL)
+while ((*head) != NULL)
 {
 p = p->next;
 free(*head);
