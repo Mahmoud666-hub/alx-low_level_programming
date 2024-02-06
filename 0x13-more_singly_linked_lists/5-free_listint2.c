@@ -10,12 +10,7 @@ if (!head || !*head)
 {
 return;
 }
-if ((*head)->next == NULL)
-{
-free(*head);
-(*head) = NULL;
-return;
-}
+
 p = (*head);
 while (p != NULL)
 {
