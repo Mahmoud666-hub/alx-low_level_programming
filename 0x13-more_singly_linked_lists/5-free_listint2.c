@@ -12,7 +12,7 @@ return;
 }
 if (*head == NULL)
 {
-(*head) = NULL;
+free(head);
 return;
 }
 
