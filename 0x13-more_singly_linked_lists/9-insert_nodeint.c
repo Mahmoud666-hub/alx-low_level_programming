@@ -12,7 +12,6 @@ return (NULL);
 u = malloc(sizeof(listint_t));
 if (u == NULL)
 {
-free(*head);
 return (NULL);
 }
 u->n = n;
