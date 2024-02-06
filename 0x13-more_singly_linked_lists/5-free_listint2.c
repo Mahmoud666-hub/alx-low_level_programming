@@ -22,5 +22,5 @@ p = p->next;
 free(*head);
 (*head) = p;
 }
-(*head) = p;
+*head = NULL;
 }
