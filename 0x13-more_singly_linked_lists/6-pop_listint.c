@@ -21,7 +21,7 @@ return (x);
 }
 else
 x = p->n;
-free(*head);
-free(head);
+free(p);
+*head = NULL;
 return (x);
 }
