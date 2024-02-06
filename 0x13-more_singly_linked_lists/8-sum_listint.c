@@ -12,7 +12,7 @@ if (head == NULL)
 {
 return (0);
 }
-while (p->next)
+while (p)
 {
 sum += p->n;
 p = p->next;
