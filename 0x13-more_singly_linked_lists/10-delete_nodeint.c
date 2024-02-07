@@ -16,7 +16,7 @@ if ((*head) == NULL || head == NULL)
 if (index == 0)
 {
 (*head) = u->next;
-free(p);
+free(u);
 return (1);
 }
 
