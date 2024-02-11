@@ -9,7 +9,7 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int z = n;
 	unsigned int i = 0, x = 0;
-	char c[x];
+	char c[32];
 
 	if (n == 0)
 	{
@@ -36,12 +36,10 @@ int get_bit(unsigned long int n, unsigned int index)
 		}
 		x++;
 	}
-	printf("%d\n", x);
-	printf("%d\n", index);
 if (index >= x)
 {
 	return (-1);
 }
 else
-return ('0' + c[index]);
+return (c[index] - 48);
 }
