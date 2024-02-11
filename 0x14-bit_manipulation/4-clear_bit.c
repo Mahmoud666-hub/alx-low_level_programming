@@ -1,5 +1,10 @@
 #include"main.h"
-/***/
+/**
+ * clear_bit - clear certain bit
+ * @n: parameter
+ * @index: parameter
+ * Return: innteger
+*/
 int clear_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int x;
