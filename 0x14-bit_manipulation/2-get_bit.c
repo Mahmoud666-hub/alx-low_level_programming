@@ -8,38 +8,19 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned long int z = n;
-	unsigned int i = 0, x = 0;
-	char c[32];
 
 	if (n == 0)
 	{
 		return (0);
 	}
-	while (z > 0)
+	if (index >= sizeof(unsigned long int) * 8)
 	{
-		z = z >> 1;
-		i++;
+		return (-1);
 	}
-	z = n;
-	while (i > 0)
+	else if (z & (1UL << index))
 	{
-		i--;
-		if (z & (1L << i))
-		{
-			/*_putchar('1');*/
-			c[x] = '1';
-		}
-		else
-		{
-			/*_putchar('0');*/
-			c[x] = '0';
-		}
-		x++;
+		return (1);
 	}
-if (index >= x)
-{
-	return (-1);
-}
-else
-return (c[index] - 48);
+	else
+	return (0);
 }
