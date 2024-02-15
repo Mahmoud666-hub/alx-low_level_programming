@@ -20,7 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	while (y <= letters)
+	while (y < letters)
 	{
 	y = read(x, buf, 5);
 	if (y > 0)
