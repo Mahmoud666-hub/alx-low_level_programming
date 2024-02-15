@@ -8,7 +8,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t x;
-	size_t y = 0;
+	size_t y, z = 0;
 	char buf[50];
 
 	if (filename == NULL)
@@ -20,15 +20,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	while (y < letters)
-	{
-	y = read(x, buf, 5);
-	if (y > 0)
-	{
-		close(x);
-		return (0);
-	}
-	}
+	 while ((y = read(x, buf, sizeof(buf) - 1)) > 0)
+    {
+        buf[y] = '\0';
+		write(STDOUT_FILENO, buf, y);
+        letters -= y;
+        if (letters <= 0)
+        {
+            break;
+        }
+		z += y;
+    }
 	close(x);
-	return (y);
+	return (z + 1);
 }
