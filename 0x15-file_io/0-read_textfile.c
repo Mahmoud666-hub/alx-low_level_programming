@@ -31,6 +31,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		}
 		z += y;
 	}
+	if (y == -1)
+	{
+		close(x);
+		return (0);
+	}
 	close(x);
 	return (z + 1);
 }
