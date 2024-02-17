@@ -10,34 +10,36 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	FILE *p;
 	char *x;
 	ssize_t red;
-    if (filename == NULL) {
-        return 0;
-    }
 
-    p = fopen(filename, "r");
-    if (p == NULL)
+	if (filename == NULL)
 	{
-        return (0);
-    }
+		return (0);
+	}
 
-    x = (char *)malloc(letters);
-    if (x == NULL)
+	p = fopen(filename, "r");
+	if (p == NULL)
 	{
-        fclose(p);
-        return (0);
-    }
+		return (0);
+	}
 
-    red = fread(x, sizeof(char), letters, p);
-
-    fclose(p);
-
-    if (red == 0 || write(STDOUT_FILENO, x, red) != red)
+	x = (char *)malloc(letters);
+	if (x == NULL)
 	{
-        free(x);
-        return (0);
-    }
+		fclose(p);
+		return (0);
+	}
 
-    free(x);
+	red = fread(x, sizeof(char), letters, p);
 
-    return (red);
+	fclose(p);
+
+	if (red == 0 || write(STDOUT_FILENO, x, red) != red)
+	{
+		free(x);
+		return (0);
+	}
+
+	free(x);
+
+	return (red);
 }
