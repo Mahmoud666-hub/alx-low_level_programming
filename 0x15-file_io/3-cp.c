@@ -9,7 +9,7 @@ int main(int argc, char **argv)
 {
 	FILE *x;
 	int y, e, m;
-	char a[1024];
+	char a[50];
 
 	if (argc != 3)
 	{dprintf(2, "Usage: cp file_from file_to\n");
@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 	{dprintf(2, "Error: Can't read from file NAME_OF_THE_FILE\n");
 		exit(98);
 	}
-	while (e > 0)
+	while (!feof(x))
 	{
 		e = fread(a, 1, 1024, x);
 		if (e == -1)
