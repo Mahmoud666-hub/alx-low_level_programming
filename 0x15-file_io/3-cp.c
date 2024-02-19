@@ -21,19 +21,19 @@ int main(int argc, char **argv)
 	{dprintf(2, "Error: Can't read from file NAME_OF_THE_FILE\n");
 		exit(98);
 	}
-	
+
 
 	y = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (y == -1)
 	{dprintf(2, "Error: Can't write to NAME_OF_THE_FILE\n");
 		exit(99);
 	}
-	
-	while ((c = fgetc(x)) != EOF )
+
+	while ((c = fgetc(x)) != EOF)
 	{
 		write(y, &c, 1);
 	}
-	
+
 
 	if (close(y) == -1 || fclose(x) == -1)
 	{dprintf(2, "Error: Can't close fd FD_VALUE\n");
