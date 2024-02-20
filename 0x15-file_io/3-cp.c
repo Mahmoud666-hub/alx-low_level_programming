@@ -1,11 +1,12 @@
-#include"main.h"
+/*#include"main.h"
+#include<sys/stat.h>
 /**
  * main - copy files
  * @argc: parameter
  * @argv: parameter
  * Return: integer
 */
-int main(int argc, char **argv)
+/*int main(int argc, char **argv)
 {
 	FILE *x;
 	int y;
@@ -23,7 +24,7 @@ int main(int argc, char **argv)
 	}
 
 
-	y = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
+	y = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 	if (y == -1)
 	{dprintf(2, "Error: Can't write to NAME_OF_THE_FILE\n");
 		exit(99);
@@ -40,4 +41,4 @@ int main(int argc, char **argv)
 		exit(100);
 	}
 	return (0);
-}
+}*/
