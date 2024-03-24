@@ -12,7 +12,6 @@ int main(void)
 {
     dlistint_t *head;
     dlistint_t *new;
-    dlistint_t *w;
     dlistint_t hello = {8, NULL, NULL};
     size_t n;
 
@@ -28,22 +27,7 @@ int main(void)
     new->next = head;
     new->prev = NULL;
     head = new;
-
-    w = malloc(sizeof(dlistint_t));
-    if (w == NULL)
-    {
-        dprintf(2, "Error: Can't malloc\n");
-        return (EXIT_FAILURE);
-    }
-    w->n = 92;
-    head->prev = w;
-    w->next = head;
-    w->prev = NULL;
-    head = w;
-
-
-
-    n = print_dlistint(head);
+    n = dlistint_len(head);
     printf("-> %lu elements\n", n);
     free(new);
     return (EXIT_SUCCESS);
